@@ -1,0 +1,31 @@
+{
+  "name": "repro-knip-nextjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cd my-app && next dev",
+    "build": "cd my-app && next build",
+    "start": "cd my-app && next start",
+    "lint": "cd my-app && next lint",
+    "knip:entry": "knip -c knip-manual-entry.json",
+    "knip:plugin": "knip -c knip-plugin-override.json"
+  },
+  "dependencies": {
+    "next": "13.5.5",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.5",
+    "knip": "^2.34.0",
+    "postcss": "^8",
+    "tailwindcss": "^3",
+    "typescript": "^5"
+  }
+}

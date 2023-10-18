@@ -1,0 +1,35 @@
+{
+    "$schema": "https://unpkg.com/knip@2/schema.json",
+    "next": {
+        "config": [
+            "my-app/next.config.{js,ts,cjs,mjs}"
+        ],
+        "entry": [
+            "my-app/middleware.{js,ts}",
+            "my-app/app/**/route.{js,ts}",
+            "my-app/app/**/{error,layout,loading,not-found,page,template}.{js,jsx,ts,tsx}",
+            "my-app/instrumentation.{js,ts}",
+            "my-app/app/{manifest,sitemap,robots}.{js,ts}",
+            "my-app/app/**/{icon,apple-icon}.{js,ts,tsx}",
+            "my-app/app/**/{opengraph,twitter}-image.{js,ts,tsx}",
+            "my-app/pages/**/*.{js,jsx,ts,tsx}",
+            "my-app/src/middleware.{js,ts}",
+            "my-app/src/app/**/route.{js,ts}",
+            "my-app/src/app/**/{error,layout,loading,not-found,page,template}.{js,jsx,ts,tsx}",
+            "my-app/src/instrumentation.{js,ts}",
+            "my-app/src/app/{manifest,sitemap,robots}.{js,ts}",
+            "my-app/src/app/**/{icon,apple-icon}.{js,ts,tsx}",
+            "my-app/src/app/**/{opengraph,twitter}-image.{js,ts,tsx}",
+            "my-app/src/pages/**/*.{js,jsx,ts,tsx}"
+        ]
+    },
+    "postcss": {
+        "config": "*/postcss.config.js"
+    },
+    "tailwind": {
+        "config": "*/tailwind.config.ts"
+    },
+    "eslint": {
+        "config": "*/.eslintrc.json"
+    }
+}
